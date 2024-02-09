@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Prático styles.css">
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <title>Trilha de CSS - DIO</title>
+<style>
+
+  h1{
+    font: bold;
+    color: #3697e6;
+    text-align: center;
+
+  }
+  .container
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px;
+  }
+  
+  aside{
+    background:#f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  main{
+    flex: 1;
+    padding: 20px;
+    text-align:justify;
+    
+  }
+
+  footer{
+    text-align:center;
+    font-size: small;
+  }
+
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
+
+  aside,main{
+    width: 100%;
+    padding: 10px;
+  }
+}
+  h2{
+    text-align: center;
+    font-size: 50px;
+    color: #3697e6;
+
+
+  }
+  
+img{
+    max-height: 90vh;
+    object-fit: cover;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  position: absolute;
+  top:  40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  border-radius: 50%;
+  margin-top: auto;
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+  .module1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: rgba(6, 12, 34, 0.8);
+    border-radius: 15px;
+    padding: 10px;
+  
+  }
+  h1{
+    font-size: 3em;
+  }
+  
+.module2{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: rgba(6, 12, 34, 0.8);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+.module3{
+text-align: center;
+font-family: 'Raleway', sans-serif; 
+padding: 10px;
+border-radius: 15px;
+background-color: rgba(6, 12, 34, 0.8);
+color: white;
+ 
+}
+
+#botão{
+  display: block;
+  color:black;
+  margin: auto;
+  width: 30%;
+  height: 50px;
+  border-radius: 10%/100%; 
+ font-size: 15px;
+ 
+  
+
+  
+}
+
+
+
+
+.text{
+width: 244px;
+height: 141px;
+font-family: Raleway;
+font-size: 30px;
+font-weight: 900;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: right;
+float: left;
+margin: 30px;
+color: white;
+
+
+
+
+}
+
+
+
+
+
+.overlay-image{
+width: 1400px;
+height: 300px;
+top: 1250px;
+border: 1px, 1px, 1px, 0px;
+position: absolute; 
+background-repeat: no-repeat;
+z-index: -1;
+opacity: .7;
+
+
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+  <header class="banner">
+    <div class="banner-content">
+      <div class="logo" >
+        <img src="image/banner.png" class="banner" alt="" >
+ <img src="image/logo.png" title="Logotipo Trilha de CSS DIO" class="center" alt="Logotipo Trilha de CSS DIO">
+      </div>
+      <h1>Trilha de CSS da DIO</h1>
+      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button id="botão" class="botão">Quero me inscrever</button>
+    </div>
+  </header>
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p>
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
+        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module1">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <br>
+        <div class="module2">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <br>
+        <div class="module3">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas 
+        </div>
+      </div>
+    </section>
+    <br>
+    <hr><p id="text" class="text">TRANSFORME O MUNDO COM A GENTE
+ </p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+    <section id="transform-world">
+<div class="container">
+    <img src="image/woman-code.png" 
+   class="overlay-image"   alt="">
+  </div>
+    </section>
+    <hr>
+    <section id="professional-challenges">
+      <h2>Evolua e Encare Novos Desafios Profissionais</h2>
+      <img src="image/professional-challenges.png" class="image" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <p>
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
+        além do conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+      </p>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <img class="dio-logo" src="image/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <p>Acesse <a href="https://dio.me">dio.me</a> 
+        <style>p{
+            color: white;
+            font-size: 18px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: .07em;
+            margin: 0 auto;
+            max-width: 960px;
+            padding: 0;
+        
+        }
+            </style>
+        e se cadastre agora </p>
+  </footer>
+
+
+  
+
+
+
+</body>
+</html>
